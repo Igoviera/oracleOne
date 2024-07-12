@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8E8E8;
+    height: 100vh;
+}
+
+header {
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.img_logo {
+    width: 1.5%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 100%;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+}
+
+.container1-placeholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+textarea {
+    background-color: #E8E8E8;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 2rem;
+    color: #0A3871;
+    height: 50%;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+.text-container1-informacao {
+    color: #495057;
+}
+
+.container-btn-geral {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-btn-geral div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.container-btn-geral p {
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    border-radius: 24px;
+    padding:  0 24px;
+    height: 65px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-criptografar {
+    width: 50%;
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-criptografar:hover {
+    background-color: #041c3a;
+    transition: 0.5s;
+}
+
+.btn-descriptografar {
+    width: 50%;
+    border: solid 1px #0A3871;
+    color: #0A3871;
+    background-color: transparent;
+}
+
+.btn-descriptografar:hover {
+    transition: 0.5s;
+}
+
+#copiartexto {
+    width: 90%;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    border-radius: 32px;
+    background-color: white;
+}
+
+.container2_img {
+    width: 85%;
+}
+
+.container2-texto {
+    width: 85%;
+    text-align: center;
+}
+
+.container2-texto h1 {
+    color: #343A40;
+}
+
+.container2-texto p {
+    color: #495057;
+}
+
+.textCriptografado {
+    text-align: center;
+    color: #0A3871;
+    font-size: 2rem;
+    width: 100%;
+    height: 80%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .container1 {
+        height: 100%;
+        width: 90%;
+    }
+    .container2 {
+        width: 90%;
+        height: auto;
+    }
+    .container2_img {
+        display: none;
+       
+    }
+
+    .container2-texto{
+        padding: 5% 0%;
+    }
+}
